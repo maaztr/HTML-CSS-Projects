@@ -1,0 +1,23 @@
+h1 {
+    color:black;
+    text-align: center;
+    background-color: lightgoldenrodyellow;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 0%;
+    margin-bottom:0%;
+    padding-bottom: 50px;
+    
+  }
+  h2 {
+    color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    background-color: peachpuff;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 0%;
+    margin-bottom:0%;
+  }
