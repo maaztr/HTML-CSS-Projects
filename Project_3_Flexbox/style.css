@@ -1,4 +1,4 @@
-/* Flexbox - Project - 4*/
+/* Flexbox - Project - 3*/
 *{
     box-sizing: border-box;
     margin: 0 auto;
@@ -13,18 +13,64 @@ body{
     display: flex;
     flex-wrap: wrap;
     background-color: red;
-    width: 100%;
+    max-width: 1350;
     /*height: 100vh;*/
     text-align: center;
 }
 
-.header{
+.blog{
     display: flex;
-    flex-direction:row;
-    width: 99.5%;
-    margin: 0 auto;
-    height: 7vh;
+    flex:1 0 auto;
+    background-color: cyan;
+    align-items: center;
+    margin: 0.5%;
+    justify-content: center; 
+    height: 5vh;
+    font-size:calc((var(--h) / 3));
+
+}
+.header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo{
+    background-color: whitesmoke;
+    flex: 1 0 40%;
+    margin: 15px;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.phonemenu{
+    width: 100%;
+    display: flex;
+    height: 12vh;
+    flex-direction: column;
+    align-items: flex-end;
     
+}
+.phone, .menu{
+    background-color: whitesmoke;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+.phone{
+    flex: 1 0 auto;
+    width: 50%;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+.menu{
+    flex: 1 0 auto;
+    width: 80%;
+    margin-top: 15px;
 }
 
 .main-1{
@@ -32,23 +78,16 @@ body{
     width: 99.5%;
     margin: 0 auto;
     height: 25vh;
+    flex-direction: row;
 }
 .main-2{
     display: flex;
     width: 99.5%;
     margin: 0 auto;
-    height: 50vh;
+    /*height: 50vh;*/
+    flex-direction: column;
 }
 
-.logo, .menu{
-    display: flex;
-    flex:1 0 auto;
-    background-color: yellow;
-    align-items: center;
-    margin: 0.5%;
-    justify-content: center;
-    font-size:calc((var(--h) / 3));
-}
 .image-slideshow {
     display: flex;
     flex:1 0 auto;
@@ -56,7 +95,7 @@ body{
     align-items: center;
     margin: 0.5%;
     justify-content: center; 
-    height: 40vh;
+   /*height: 40vh;*/
     font-size:calc((var(--h) / 3));
 }
 
@@ -70,16 +109,6 @@ body{
     height: 5vh;
     font-size:calc((var(--h) / 3));
 
-}
-
-.feat-1, .feat-2, .feat-3{
-    display: flex;
-    flex:1 0 32%;
-    background-color: greenyellow;
-    align-items: center;
-    margin: 0.5%;
-    justify-content: center;  
-    font-size:calc((var(--h) / 3));
 }
 
 .sidebar{
