@@ -6,21 +6,38 @@
 body{
     background-color: white;
     font-family: calibri, sans-serif;
+    --h:10vh;
 }
 
 .flexbox{
     display: flex;
     flex-wrap: wrap;
     background-color: red;
-    width: 1350px;
-    height: 100vh;
+    width: 100%;
+    /*height: 100vh;*/
     text-align: center;
 }
 
-.header, .main-1, .main-2, .end{
+.header{
+    display: flex;
+    flex-direction:row;
+    width: 99.5%;
+    margin: 0 auto;
+    height: 7vh;
+    
+}
+
+.main-1{
     display: flex;
     width: 99.5%;
     margin: 0 auto;
+    height: 25vh;
+}
+.main-2{
+    display: flex;
+    width: 99.5%;
+    margin: 0 auto;
+    height: 50vh;
 }
 
 .logo, .menu{
@@ -30,14 +47,29 @@ body{
     align-items: center;
     margin: 0.5%;
     justify-content: center;
+    font-size:calc((var(--h) / 3));
 }
-.image-slideshow, .footer{
+.image-slideshow {
     display: flex;
     flex:1 0 auto;
     background-color: cyan;
     align-items: center;
     margin: 0.5%;
-    justify-content: center;                       
+    justify-content: center; 
+    height: 40vh;
+    font-size:calc((var(--h) / 3));
+}
+
+.footer{
+    display: flex;
+    flex:1 0 auto;
+    background-color: cyan;
+    align-items: center;
+    margin: 0.5%;
+    justify-content: center; 
+    height: 5vh;
+    font-size:calc((var(--h) / 3));
+
 }
 
 .feat-1, .feat-2, .feat-3{
@@ -47,14 +79,24 @@ body{
     align-items: center;
     margin: 0.5%;
     justify-content: center;  
+    font-size:calc((var(--h) / 3));
 }
 
-.sidebar, .text-content{
+.sidebar{
     display: flex;
-    flex:1 0 49%;
+    flex:1 0 39%;
     background-color: PINK;
-
+    font-size:calc((var(--h) / 3));
     align-items: center;
     margin: 0.5%;
     justify-content: center;  
+}
+.text-content{
+    display: flex;
+    flex:1 0 59%;
+    background-color: PINK;
+    align-items: center;
+    margin: 0.5%;
+    justify-content: center;  
+    font-size:calc((var(--h) / 3));
 }
