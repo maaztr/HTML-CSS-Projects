@@ -1,0 +1,120 @@
+/* Flexbox - Project - 3*/
+*{
+    box-sizing: border-box;
+
+}
+h2{
+    color: darkblue;
+}
+body{
+    background-color: white;
+    font-family: calibri, sans-serif;
+    --h:10vh;
+    max-width: 1350;
+}
+
+.flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    /*max-width: 1350;*/
+    /*height: 100vh;*/
+    text-align: left;
+}
+
+.section_1{
+    border: 20px solid grey;
+    width: 1350  px;
+}
+
+.section_1_1{
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.section_1_2{
+    display: inline-flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+    
+
+}
+
+
+.section_1_3{
+    display: inline-flex;
+
+}
+
+.section_1_3a, .section_1_3b, .section_1_3c{
+    margin-right: 25px;
+}
+
+.placebid, .buynow{
+    color: white;
+    background-color: darkblue;
+    margin: 3px auto;
+    border-radius: 2px;
+}
+
+.section_1_3{
+    text-align:left;
+    line-height: 25px;
+}
+
+
+.section_1, .section_4{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.BMW{    
+    display: flex;
+    flex-direction: row;
+    margin-right: 25px;
+}
+
+.section_2{
+    display: flex;
+    flex-direction: column;
+    margin-right: 25px;
+}
+.Announcement{
+    display: flex;
+    justify-content: left; 
+    }
+.Carfax{
+    margin: 1%;
+    float: left;
+    width:  33%;
+}
+.section_3{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.Overview, .Your_Top_Recommendation{
+    background-color: darkblue;
+    padding-left: 15px;
+    color: white; 
+    width: 100%;
+}
+
+.Recommendation_Selections{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    height: 25vh;
+    flex-direction: row;
+    background-color: white;
+    
+}
+
+figure{
+    margin: 1%;
+    float: left;
+    width:  33%;
+}
