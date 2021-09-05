@@ -18,9 +18,7 @@ p{
   .colorButtons{display: flex;flex-direction: row;justify-content: space-around;max-width: 400px;}
   .sizeVehicle{display: flex;flex-direction: row;justify-content: space-between;max-width: 400px;}
   .vehicleSize{
-    width: 200px;
-    height: 100px;
-    background: green;
+
     margin: 2em;
   }
   .vehicleSize > * {

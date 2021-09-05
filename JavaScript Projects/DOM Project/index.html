@@ -8,7 +8,7 @@
 <body>
     <div class="main">
         <div>
-            <h1>Registratioin Form</h1>
+            <h1 id = "test">Registratioin Form</h1>
         </div>
         <div class='firstlastNames'>
             <div>
@@ -20,27 +20,27 @@
         </div>
         <div>
             <!--- <h3>Salams Mohammad Younas! Thank you for joining us.</h3>*/-->
-            <h3 id="demo"></h3>
+            <h3 id="updateName"></h3>
         </div>
         <div>
             <h2>How many vehicles do you want to buy?</h2>
         </div>
         <div class='btnsTotalVehicles'>
             <div>
-                <button onclick="addHtmlElement()">+</button>
+                <button onclick="addVehicle()">+</button>
             </div>
             <div>
-                <button onclick="removeHtmlElement(`ID_${i}`)">-</button>
+                <button onclick="removeVehicle(`ID_${i}`)">-</button>
             </div>
         </div>
-        <div class='vehicles'>
+        <!--<div id = 'vehicles_id' class='vehicles'>
             <div class="vehicle">
                 <div>
-                    <h2>What color of vehicle would you prefer for vehicle 1</h2>
+                    <h2 id="vehicleNum"></h2>
                 </div>
                 <div class='colorButtons'>
                     <div>
-                        <button>green</button>
+                        <button onclick="updateGreen(`car_${i}`)">green</button>
                     </div>
                     <div>
                         <button>grey</button>
@@ -73,7 +73,7 @@
                     <p>Car size & color</p>
                 </div>
             </div>
-            <!--<div class="vehicle">
+            <div class="vehicle">
                 <div>
                     <h2>What color of vehicle would you prefer for vehicle 2</h2>
                 </div>
@@ -111,10 +111,11 @@
                 <div class='vehicleSize'>
                     <p>Car size & color</p>
                 </div>
-            </div>-->
-        </div>
+            </div>
+        </div>-->
+        <div id="end"></div>
     </div>
-    
+
     <!-- 
     document.getElementsByClassName('test')[0]
     document.getElementById("demo").innerHTML
